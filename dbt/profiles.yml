@@ -1,0 +1,9 @@
+frostlake:
+  target: dev
+  output: 
+    dev:
+      type: duckdb
+      path: "../warehouse/frostlake.duckdb"
+      threads: 4
+      extensions:
+        - iceberg
