@@ -16,6 +16,9 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+on-run-start:
+  - "SET unsafe_enable_version_guessing = true"
+  
 models:
   frostlake:
     silver:

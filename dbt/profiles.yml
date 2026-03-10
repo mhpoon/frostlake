@@ -1,9 +1,11 @@
 frostlake:
   target: dev
-  output: 
+  outputs: 
     dev:
       type: duckdb
-      path: "../warehouse/frostlake.duckdb"
+      path: "warehouse/frostlake.duckdb"
       threads: 4
       extensions:
         - iceberg
+      settings:
+        unsafe_enable_version_guessing: true
